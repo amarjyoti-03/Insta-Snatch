@@ -1,0 +1,4 @@
+Flask==2.2.2
+youtube-dl==2021.12.17  # or the appropriate version
+requests==2.28.1
+beautifulsoup4==4.11.1

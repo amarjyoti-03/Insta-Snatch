@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .neon-text {
+            font-size: 3rem;
+            color: #ffd700;
+            text-shadow: 0 0 15px #ffd700, 0 0 25px #ff9900, 0 0 35px #ff6600;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        select, input, button {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.2rem;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 2px solid #ffd700;
+            background-color: black;
+            color: white;
+            box-shadow: 0 0 10px gold;
+        }
+
+        button {
+            background-color: gold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff9900;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="neon-text">YouTube Downloader</h1>
+        <p class="description">Select your download type and paste the YouTube URL below</p>
+        
+        <select>
+            <option value="video">YouTube Video Download</option>
+            <option value="mp4">YouTube Mp4 Download</option>
+            <option value="shorts">YouTube Shorts Download</option>
+            <option value="mp3">YouTube Mp3 Download</option>
+        </select>
+
+        <input type="text" placeholder="Paste YouTube URL here" class="input-box">
+        <button>Download</button>
+
+        <a href="index.html" class="back-to-home">Back to Home</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Insta Snatch. All rights reserved.</p>
+    </footer>
+</body>
+</html>
